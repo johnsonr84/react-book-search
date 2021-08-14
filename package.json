@@ -23,6 +23,7 @@
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "mongod": "^2.0.0",
     "mongoose": "^5.13.7",
     "react-router-dom": "^5.2.0"
   }
