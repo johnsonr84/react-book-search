@@ -25,6 +25,8 @@
     "if-env": "^1.0.4",
     "mongod": "^2.0.0",
     "mongoose": "^5.13.7",
-    "react-router-dom": "^5.2.0"
+    "path": "^0.12.7",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^4.46.0"
   }
 }
