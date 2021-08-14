@@ -24,7 +24,13 @@ app.get("*", function(req, res) {
 app.use(routes);
 
 // Connects to MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactbooksearch", 
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+});
 
 // Starts API server
 app.listen(PORT, function() {
