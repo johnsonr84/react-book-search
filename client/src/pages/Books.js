@@ -5,16 +5,28 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import axios from 'axios'
 
 function Books() {
   // Setting our component's initial state
   const [books, setBooks] = useState([])
+  const [searchField, setSearchField] = useState("");
   const [formObject, setFormObject] = useState({})
 
   // Load all books and store them with setBooks
-  useEffect(() => {
-    loadBooks()
-  }, [])
+  // useEffect(() => {
+  //   loadBooks()
+  // }, [])
+
+  function searchBook(event){
+    // event.preventDefault(event);
+     axios.request({
+       method: 'get',
+       url:"https://www.googleapis.com/books/v1/volumes?q="+ formObject.title})
+     .then((res)=>{
+       setBooks( res.data.items);
+     })
+   }
 
   // Loads all books and sets them to books
   function loadBooks() {
@@ -25,13 +37,32 @@ function Books() {
       .catch(err => console.log(err));
   };
 
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value}) 
+  };
+
+  // When the form is submitted, use the API.saveBook method to save the book data
+  // Then reload books from the database
+  function handleFormSubmit(event) {
+    event.preventDefault(); 
+      if(formObject.title){
+        setSearchField(formObject.title)
+        searchBook();
+      }
+      else{
+        setSearchField(formObject.author);
+        searchBook();
+      }
+  };
+
 
     return (
       <Container fluid>
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Let's Find A Good Read!</h1>
             </Jumbotron>
             <form>
               <Input
@@ -53,34 +84,22 @@ function Books() {
                 disabled={!(formObject.author && formObject.title)}
                 onClick={() => {}}
               >
-                Submit Book
+                Search
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Books On My List</h1>
-            </Jumbotron>
-            {books.length ? (
-              <List>
-                {books.map(book => {
-                  return (
-                    <ListItem key={book._id}>
-                      <a href={"/books/" + book._id}>
-                        <strong>
-                          {book.title} by {book.author}
-                        </strong>
-                      </a>
-                      <DeleteBtn onClick={() =>{}} />
-                    </ListItem>
-                  );
-                })}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
-        </Row>
+
+ 
+          <div style={{marginTop:50}}>
+           
+           <h1 style={{display:"inline-block", marginLeft: "30px"}}>Suggestions</h1>
+           <h1 style={{display:"inline-block", float:"right", marginRight: "30px"}}><Link to="/SavedBooks">Saved Books</Link> </h1>
+    
+         
+         <BookList books = {books}/>
+           
+         </div>
+
       </Container>
     );
   }
