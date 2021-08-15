@@ -61,20 +61,14 @@ assignment 21
 
   ## Mock-Up
   <table>
-  <tr>
-    <td>react-book-search</td>
-     <td>react-book-search</td>
-  </tr>
-  <tr>
-    <td><img src="assets/11-express-homework-demo-01.png" height=300 alt="screenshot of react-book-search"></td>
-    <td><img src="assets/11-express-homework-demo-02.png" height=300 alt="screenshot of react-book-search"></td>
-  </tr>
+    <tr>
+      <td>react-book-search example</td>
+    </tr>
+    <tr>
+      <td><img src="react-book-search.png" height=300 alt="screenshot of react-book-search"></td>
+    </tr>
   </table>
-  <table>
-  <tr>
-     <td>react-book-search</td>
-     <td>react-book-search</td>
-  </tr>
+
   
   ## Technologies 
   ```
