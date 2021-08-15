@@ -39,7 +39,7 @@ function SavedBooks() {
       <Jumbotron>
         <h1>My Saved Books</h1>
       </Jumbotron>
-      <div style={{ marginTop: 50 }}>
+      <div style={{ marginTop: 30 }}>
         <h1 style={{ textAlign: "right", marginRight: "30" }}><Link to="/">Search</Link> </h1>
       </div>
       <div>

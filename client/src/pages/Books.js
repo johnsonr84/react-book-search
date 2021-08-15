@@ -54,11 +54,10 @@ function Books() {
   };
 
   return (
-    <Container fluid>
+    <Container>
       <Jumbotron>
-        <h1>Looking for a Book?</h1>
-      </Jumbotron>
-      <form>
+        <h1>Let's Find A Book!</h1>
+        <form>
         <Input
           onChange={handleInputChange}
           name="title"
@@ -70,6 +69,8 @@ function Books() {
           Search
         </FormBtn>
       </form>
+      </Jumbotron>
+      
 
       <div style={{ marginTop: 50 }}>
 
