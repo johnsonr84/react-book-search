@@ -65,7 +65,7 @@ assignment 21
       <td>react-book-search example</td>
     </tr>
     <tr>
-      <td><img src="react-book-search.png" height=300 alt="screenshot of react-book-search"></td>
+      <td><img src="react-book-search.png" height=400 alt="screenshot of react-book-search"></td>
     </tr>
   </table>
 
