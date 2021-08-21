@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/books", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-book-search", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
