@@ -13,4 +13,8 @@ router
   .put(booksController.update)
   .delete(booksController.remove);
 
+  router.get('search/:name', (req, res) => {
+    console.log(res)
+  })
+
 module.exports = router;

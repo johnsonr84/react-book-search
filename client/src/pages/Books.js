@@ -54,7 +54,7 @@ function Books() {
   };
 
   return (
-    <Container>
+    <Container fluid>
       <Jumbotron>
         <h1>Let's Find A Book!</h1>
         <form>
