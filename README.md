@@ -69,17 +69,16 @@ assignment 21
     </tr>
   </table>
 
-  
   ## Technologies 
   ```
   Reactjs node.js, Mongodb, Mongoose, Express js, React-Bootstrap, React-Router-Dom
   ```
 
   ## Installation 
-  Fork or clone the repo, then run `npm install` to obtain the required dependencies and then run node index to start the application. 
+   Access to GitHub.com and a code editor such as vscode is necessary. Click the GitHub link provided above to the APP REPO. Click on the green button that says Clone or Download and Choose how you would like to download: using the SSH/HTTPS keys or download the zip file. If using SSH/HTTPS Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. If using Download ZIP: Click on Download Zip. Locate the file and double click it to unzip the file. Locate the unzipped folder and open it. 
 
   ## Usage 
-  To use the application, enter a title and body for your note and press the save button. Notes can be viewed or deleted, and new notes can be created by clicking the icon on the top right.
+  In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install [node.js](https://nodejs.org/en/) and [npm](www.npmjs.com) or [yarn](https://yarnpkg.com/) package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “npm i“ or “yarn add”  to install the dependencies. You will also need to signup for a free account at [mongodb.com](https://www.mongodb.com/). In addition, make sure to create a .env file on the project root, and input your own mongodb Atals config information (see .env_example for samples). You also need to obtain a Google Book API Key [link here](https://developers.google.com/books/docs/v1/getting_started) and replace process.env.REACT_APP_BOOK_API_KEY in src/Search/Search.js file with you own API KEY. Now you are ready to start using  the app by entering “npm start” on your terminal or gitbash. If you just want to try how the app works, you can go to the link [here](https://mern-react-book.herokuapp.com/)
 
   ## Credits 
   Me, myself and Irene 
