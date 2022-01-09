@@ -1,65 +1,40 @@
-# react-book-search
-assignment 21
+ <h1 align="center"><a href="https://mern-react-book.herokuapp.com/"> React Book Search 📚</a></h1>
+
+  ## Description 
+  A React-based Google Books Search app with helper/util functions and React Hooks to query and display books based on user searches. It also uses Node, Express, MongoDB and is deployed to Heroku.
 
   [![github-follow](https://img.shields.io/github/followers/johnsonr84?label=Follow&logoColor=lightgrey&style=social)](https://github.com/johnsonr84)
   [![project-languages-used](https://img.shields.io/github/languages/count/johnsonr84/readme-generator?color=orange)](https://github.com/johnsonr84/react-book-search)
   [![project-top-language](https://img.shields.io/github/languages/top/johnsonr84/readme-generator?color=yellow)](https://github.com/johnsonr84/react-book-search)
   [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
+  ## Built With
+  [![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+  [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
+  [![ExpressJS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+
   ## Table of Contents 
   * [Description](#Description)
-  * [User Story](#UserStory)
   * [Project URL](#Project-URL)
-  * [Deplyment](#Deployment)
-  * [Mock-up](#Mock-up)
-  * [Technologies](#Technologies)
+  * [Deployment](#Deployment)
+  * [Demo/Screenshots](#Demo/Screenshots)
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [Credits](#Credits)
   * [License](#License)
-  * [Features](#Features)
-  * [Tests](#Tests)
   * [Resources](#Resources)
   * [Contact](#Contact)
-  * [Designed and built by](#Designed-and-built-by)
+  * [Author](#Author)
   #
-  
-  ## Description 
-  A React-based Google Books Search app with helper/util functions and React Hooks to query and display books based on user searches. It also uses Node, Express, MongoDB and is deployed to Heroku.
 
-  ## UserStory 
-  ```
-  As a user, I want to be able to search for books, view details of a book on Google Books, and "Save" as well as 'Delete" a book.
-  ```
-  ## Acceptance Criteria
-  ``` 
-  * This application requires at minimum 2 pages, check out the following mockup images for each page:
-
-    1. Start by using the [01-Ins_Mern/create-react-express](../01-Activities/01-Ins_Mern/create-react-express) example as a base for your application.
-
-    2. Add code to connect to a MongoDB database named `googlebooks` using the mongoose npm package.
-
-    3. Using mongoose, then create a Book schema.
-
-    4. At a minimum, books should have each of the following fields:
-
-    * `title` - Title of the book from the Google Books API
-
-    * `authors` - The books's author(s) as returned from the Google Books API
-
-    * `description` - The book's description as returned from the Google Books API
-
-    * `image` - The Book's thumbnail image as returned from the Google Books API
-
-    * `link` - The Book's information link as returned from the Google Books API
-  ```
   ## Project URL
   https://github.com/johnsonr84/react-book-search
 
   ## Deployment
   https://mern-react-book.herokuapp.com/
 
-  ## Mock-Up
+  ## Demo/Screenshots
   <table>
     <tr>
       <td>react-book-search example</td>
@@ -104,11 +79,10 @@ assignment 21
   * [Deployment Guide](./MongoDBDeploy.md)
   * [Heroku](https://www.heroku.com)
 
-
   ## Contact
   Email: robertcjohnson1984@gmail.com 
 
-  ## Designed and built by
+  ## Author
   Author(s): Rob Johnson  
 
   GitHub: https://github.com/johnsonr84/ 
